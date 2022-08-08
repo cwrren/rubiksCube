@@ -22,7 +22,6 @@ public class MainClass {
             SpinFuncBocImp spinFuncBocImp = new SpinFuncBocImp();
             spinFuncBocImp.spinR(cube);
             spinFuncBocImp.spinRP(cube);
-            spinFuncBocImp.spinL(cube);
 
             consolePrinter.printAll(cube);
 
