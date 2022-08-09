@@ -54,15 +54,15 @@ public interface SpinFuncBoc {
 
     public void spinM(HashMap<String, String> cube) throws Exception;
 
-    public void spinMp(HashMap<String, String> cube) throws Exception;
+    public void spinMP(HashMap<String, String> cube) throws Exception;
 
     public void spinE(HashMap<String, String> cube) throws Exception;
 
-    public void spinEp(HashMap<String, String> cube) throws Exception;
+    public void spinEP(HashMap<String, String> cube) throws Exception;
 
     public void spinS(HashMap<String, String> cube) throws Exception;
 
-    public void spinSp(HashMap<String, String> cube) throws Exception;
+    public void spinSP(HashMap<String, String> cube) throws Exception;
 
     public void spinx(HashMap<String, String> cube) throws Exception;
 

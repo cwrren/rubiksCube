@@ -13,15 +13,15 @@ public class MainClass {
         ColourCheckerBocImp colourCheckerBoc = new ColourCheckerBocImp();
         try {
             setTestCube();
-            //resetCube();
+            resetCube();
             System.out.println("Is standard Cube? " + colourCheckerBoc.isStdCube(cube));
             ConsolePrinter consolePrinter = new ConsolePrinter(cube);
             consolePrinter.printAll(cube);
 
             System.out.println();
             SpinFuncBocImp spinFuncBocImp = new SpinFuncBocImp();
-            spinFuncBocImp.spinR(cube);
-            spinFuncBocImp.spinRP(cube);
+            //spinFuncBocImp.spinD(cube);
+            spinFuncBocImp.spinSP(cube);
 
             consolePrinter.printAll(cube);
 
