@@ -20,11 +20,12 @@ public class MainClass {
 
             System.out.println();
             SpinFuncBocImp spinFuncBocImp = new SpinFuncBocImp();
-            //spinFuncBocImp.spinD(cube);
+            spinFuncBocImp.spinD(cube);
             spinFuncBocImp.spinSP(cube);
 
             consolePrinter.printAll(cube);
 
+            System.out.println("Spin: D, S\'");
         } catch (Exception e) {
 
         }

@@ -31,7 +31,7 @@ public class ColourCheckerBocImp implements ColourCheckerBoc {
         return getKeys(cube, colour).size();
     }
 
-    private static Set<String> getKeys(Map<String, String> map, String value) throws Exception {
+    public static Set<String> getKeys(Map<String, String> map, String value) throws Exception {
 
         Set<String> result = new HashSet<>();
         if (map.containsValue(value)) {
