@@ -32,10 +32,18 @@ public class CrossCond {
         return false;
     }
 
-    public String locateWhite(HashMap<String, String> cube) throws Exception{
+    public int[] locateWhite(HashMap<String, String> cube) throws Exception{
         Set<String> whiteList = colourCheckerBocImp.getKeys(cube, Constant.WHITE);
-        for(String white: whiteList){
-            Arrays.stream(crossCoord).findAny(white);
+        for (String white : whiteList) {
+            for (int i = 0; i < crossCoord.length; i++) {
+                // columns
+                for (int j = 0; j < crossCoord[i].length; j++) {
+                    // get coord of white
+                    if (crossCoord[i][j].equals(white)) {
+                        return new int[]{i, j};
+                    }
+                }
+            }
         }
         return null;
     }

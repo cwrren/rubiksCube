@@ -10,6 +10,8 @@ public class SpinFuncBocImp implements SpinFuncBoc {
     @Override
     public void spinR(HashMap<String, String> cube) throws Exception {
         final HashMap<String, String> temp = new HashMap<>(cube);
+        HashMap<String, String> temp2 = new HashMap<>();
+        temp2 = cube;
         cube.replace(Cube.A02.getCoord(), temp.get(Cube.B02.getCoord()));
         cube.replace(Cube.A12.getCoord(), temp.get(Cube.B12.getCoord()));
         cube.replace(Cube.A22.getCoord(), temp.get(Cube.B22.getCoord()));
